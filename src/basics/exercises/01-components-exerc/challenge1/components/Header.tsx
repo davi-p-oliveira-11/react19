@@ -1,11 +1,27 @@
 const Header = () => {
+
+   type NavLink = {
+     label: string;
+     href: string;
+   };
+
+   const title: string = "Welcome to my website!";
+
+   const navLinks: NavLink[] = [
+     { label: 'Home', href: '#' },
+     { label: 'About', href: '#' },
+     { label: 'Contact', href: '#' },
+   ];
+
   return (
     <header>
-      <h1>Welcome to my website!</h1>
+      <h1>{title}</h1>
       <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Contact</a>
+        {navLinks.map((link, index) => (
+            <a key={index} href={link.href}>
+              {link.label}
+            </a>
+        ))}
       </nav>
     </header>  
   )
