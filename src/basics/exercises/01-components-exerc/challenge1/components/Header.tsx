@@ -1,5 +1,3 @@
-const Header = () => {
-
    type NavLink = {
      label: string;
      href: string;
@@ -12,6 +10,8 @@ const Header = () => {
      { label: 'About', href: '#' },
      { label: 'Contact', href: '#' },
    ];
+
+const Header: React.FC = () => {
 
   return (
     <header>
