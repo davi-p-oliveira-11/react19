@@ -1,14 +1,8 @@
-// import FetchTodo from "./components/FetchTodo"
+import { Component1 } from "./basics/copy/01-components-copy"
 
-import { Suspense } from "react"
-import FetchTodo1 from "./components/FetchTodo1"
-
-const App = () => {
+function App() {
   return (
-    <Suspense>
-      {/* <FetchTodo /> */}
-      <FetchTodo1 />
-    </Suspense>
+    <Component1 />
   )
 }
 
